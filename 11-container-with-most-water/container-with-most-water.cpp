@@ -12,7 +12,7 @@ public:
             int area=h*w;
             a=max(area,a);
 
-            if(height[l]<=height[r])
+            if(height[l]<height[r])
             l++;
 
             else
