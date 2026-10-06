@@ -2,11 +2,10 @@ class Solution {
 public:
     bool check(vector<int>& nums) {
         int n = nums.size();
-        int count = 1;
-        int sum = 0;
         if (n == 1)
             return true;
-
+        
+        int count = 0;
         for (int i = 1; i < 2 * n; i++) {
             if (nums[(i - 1) % n] <= nums[i % n])
                 count += 1;
